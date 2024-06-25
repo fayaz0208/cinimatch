@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Movie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Delete Movie</h1>
+    <form method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required><br>
+        <input type="submit" value="Delete Movie">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
